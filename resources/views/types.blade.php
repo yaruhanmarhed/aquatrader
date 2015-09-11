@@ -6,7 +6,7 @@
 
             @foreach($type->products as $product)
 			  <article class="group">
-				<img src="productphotos/shubunkin.jpg" alt="">
+				<img src="{{asset('productphotos/'.$product->photo)}}" alt="">
 				<h4>{{$product->name}}</h4>
 				<p>{{$product->description}}</p>
 				<span class="price"><i class="icon-dollar"></i> 4.00</span>
@@ -14,4 +14,4 @@
 			  </article>
 		 @endforeach
 			
-@endsection	
+@stop	
